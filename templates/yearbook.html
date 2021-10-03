@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%load static%}
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{%static 'yearbook.css'%}">
+	<title>REMINISCE| Yearbook</title>
+</head>
+<body>
+	<section class="yearbook" id="yearbook">
+      <div class="container-yearbook">
+         
+          {%for records in record%} 
+          
+          <div class="card">
+            <div class="cards card1">
+              <h1>{{records.Name}}</h1>
+              <p>"{{records.Message}}" </p>
+            </div>
+            <div class="cards card2">
+              <img src="{{records.LINK}}" alt=""></img>
+            </div>
+          </div> 
+        
+          {%endfor%}
+          
+      </div>
+  </section>
+
+  	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
