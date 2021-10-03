@@ -8,27 +8,35 @@
 	<title>REMINISCE| Yearbook</title>
 </head>
 <body>
-	<section class="yearbook" id="yearbook">
-      <div class="container-yearbook">
-         
-          {%for records in record%} 
-          
-          <div class="card">
-            <div class="cards card1">
-              <h1>{{records.Name}}</h1>
-              <p>"{{records.Message}}" </p>
-            </div>
-            <div class="cards card2">
-              <img src="{{records.LINK}}" alt=""></img>
-            </div>
-          </div> 
-        
-          {%endfor%}
-          
+	 <!--NAVIGATION START-->
+   <nav>
+    <ul>
+      <li><a href="#"><ion-icon name="home"></ion-icon><p>HOME</p></a></li>
+      <li><a href="/#gallery"><ion-icon name="images"></ion-icon><p>GALLERY</p></a></li>
+      <li><a href="/#discover"><ion-icon name="grid"></ion-icon><p>DISCOVER</p></a> </li>
+      <li><a href="#"><ion-icon name="information-circle"></ion-icon><p>ABOUT</p></a>
+      </li>
+    </ul>
+  </nav>
+<!--NAVIGATION ENDS-->
+  <section>
+    {%for records in record%} 
+    <div class="card">
+      <div class="box">
+        <div class="imgbx">
+          <img src="{{record.URL}}" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <h1>{{record.NAME}}</h1>
+            <p>{{record.MESSAGE}} </p>
+          </div>
+        </div>
       </div>
+    </div>
+    {%endfor%}
   </section>
-
-  	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
