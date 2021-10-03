@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Gluten:wght@500&display=swap');
+*{
+	padding: 0 ;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+body{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background:#1e1e1e;
+	
+}
+
+
+
+.container-yearbook{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width:100%;
+	flex-wrap: wrap;
+	
+}
+
+
+.container-yearbook .card{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: 20px;	
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	border-radius: 30px;
+
+
+}
+.cards{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 30px;
+	transform-style: preserve-3d;
+
+
+}
+
+.card1{
+	position: absolute;
+	text-align:center;
+	background: #fff;
+	color: #073668;
+	transform:0.5s ease;
+	opacity: 0%;
+}
+
+
+.card1 h1{
+	padding-top:0.2em;
+	font-size:20px;
+	font-family: 'Gluten', cursive;
+}
+.card1 p{
+	padding: 0.5px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1em;
+	
+	
+}
+
+
+.card2 img{
+	height: 200px;
+	width: 200px;
+	border-radius: 30px;
+	transition: 0.5s ease;
+}
+
+
+.card:hover  img{
+	transform:translateX(-60%) rotateY(90deg);
+	transition: 0.5s ease;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	
+}
+
+.card:hover .card1{
+	opacity: 100%;
+}
+
+
+
+/*DISCOVER end*/
+/*FOOTER STARTS*/
+
+footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh 50px;
+	background:  linear-gradient(to right bottom,#65dfc9,#6cdbeb);
+	padding-top: 1em;
+	font-size:1em;
+	font-family: 'Acme', sans-serif;
+	color: white;
+	
+
+
+
+}
+/*FOOTER ENDS*/

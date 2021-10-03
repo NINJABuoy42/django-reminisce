@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Gluten:wght@500&display=swap');
+*{
+	padding: 0 ;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+body{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+/*NAIGATION START*/
+nav {
+	width: 100%;
+	height:1px;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding:10px 10px;
+	color: black;
+	cursor: pointer;
+  	font-family: 'Acme', sans-serif;
+  	font-size: 15px;
+}
+nav ul li a:hover{
+	transform: translateY(-3px);
+	color: #073668;
+}
+ion-icon{
+	font-size: 1.5em;
+}
+/*NAVIGATION ENDS*/
+
+/*HOME START*/
+
+.home{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width:100%;
+	flex-wrap: wrap;
+	background: linear-gradient(to right,#65dfc9,#6cdbeb);
+}
+
+.glass{
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align:center;
+	justify-content: center;
+	background: white;
+	min-height: 70vh; 
+	width: 80%;
+	border-radius: 3em 3em; 
+	background: linear-gradient(135deg,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	
+}
+
+.glass .content h1{
+	padding-top: 20px;
+	font-size:20px;
+	font-family: 'Gluten', cursive;
+	font-size: 3em;
+}
+
+.glass .content p{
+	padding-bottom: 1em;
+	font-family: 'Acme', sans-serif;
+	font-size: 2em;
+}
+
+.glass .content a{ 
+	padding: 10px 10px;
+	color: black;
+	text-decoration: none;;
+	background:linear-gradient(to right bottom,#65dfc9,#6cdbeb);
+	border-radius: 30px;
+	font-family: 'Acme', sans-serif;
+	font-size: 1.5em;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+}
+/*HOME end*/
+
+
+/*DISCOVER START*/
+
+.container-discover{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width:100%;
+	flex-wrap: wrap;
+	
+}
+
+
+.container-discover .card{
+	position: relative;
+	height: 300px;
+	width: 200px;
+	background: white;
+	margin: 20px;	
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	border-radius: 30px;
+
+}
+.face{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 30px;
+
+
+}
+
+.face1{
+	text-align: center;
+	color: #073668;
+}
+
+.face1 a{
+	margin-top: 20px;
+	padding: 5px 10px;
+	border:2px solid;
+	color: #073668;
+	text-decoration: none;
+	font-family: 'Gluten', cursive;
+	border-radius: 10px;
+
+
+}
+.face1 h1{
+	padding-top:70px;
+	font-size:20px;
+	font-family: 'Gluten', cursive;
+}
+.face1 p{
+	padding-top:0.5;
+	font-size:15px;
+	font-family: 'Acme', sans-serif;
+}
+.face2{
+	background: linear-gradient(to right bottom,#65dfc9,#6cdbeb);
+}
+
+.face2 ion-icon{
+	color: white;
+	font-size: 5em;
+	transition: 1s;
+}
+.card:hover{
+	transform: translateY(-20px);
+	transition: 0.5s;
+
+}
+
+
+.card:hover .face2{
+	width:60px;
+	height: 60px;
+	border-radius: 50%;
+	transition: 0.5s;
+	top: 20px;
+	left: 35%;
+	background: white;
+	border: 3px solid #073668;
+
+}
+
+.card:hover .face2 ion-icon{
+	color: #073668;
+	font-size: 2.5em;
+
+}
+
+
+.face1 a:hover{
+	background-color: #073668;
+	color: white;
+}
+/*DISCOVER end*/
+/*FOOTER STARTS*/
+
+footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh 50px;
+	background:  linear-gradient(to right bottom,#65dfc9,#6cdbeb);
+	padding-top: 1em;
+	font-size:1em;
+	font-family: 'Acme', sans-serif;
+	color: white;
+	
+
+
+
+}
+/*FOOTER ENDS*/
