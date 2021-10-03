@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l4#8*rub*(tnyx%3=zy!$#=$by4@@xcb%8^07cbjx%ya9m=_&u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['rem-dem.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['projectreminisce.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
