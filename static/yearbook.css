@@ -51,7 +51,7 @@ nav ul li a:hover{
 	color: #073668;
 	font-size: 1.3em;
 }
-ion-icon{
+nav ul li ion-icon{
 	font-size: 1.5em;
 }
 /*NAVIGATION ENDS*/
@@ -130,7 +130,7 @@ section .card .box .content div {
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform:translateY(-40px);
+  transform:translateY(-30px);
   
 }
 section .card .box .content div h1 {
