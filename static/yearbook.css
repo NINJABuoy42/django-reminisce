@@ -146,20 +146,7 @@ section .card .box .content div p {
   letter-spacing: 1px;
   font-family: 'Dancing Script', sans-serif;
 }
-section .card .box .content .conbx  {
-  background:#fff;
-  border-radius:50%;
-  height:50px;
-  width:50px;
-  display:flex;
-  justify-content:center;
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
-  
-}
-section .card .box .content .conbx  ion-icon  {
-  font-size:6em;
-   
-}
+
 
 section .card:hover .box {
   transform: rotateY(180deg);
