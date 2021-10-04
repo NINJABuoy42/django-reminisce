@@ -135,17 +135,16 @@ section .card .box .content div {
 }
 section .card .box .content div h1 {
   color: #fff;
-  font-size: 20px;
+  font-size: 2em;
   letter-spacing: 1px;
-  font-family: 'Gluten', sans-serif;
+  font-family: 'Gluten', cursive;
 }
 
 section .card .box .content div p {
   color: #fff;
-  font-size: 16px;
+  font-size: 1.4em;
   letter-spacing: 1px;
   font-family: 'Dancing Script', sans-serif;
-	
 }
 section .card .box .content .conbx  {
   background:#fff;
