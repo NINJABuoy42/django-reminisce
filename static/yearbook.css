@@ -137,12 +137,15 @@ section .card .box .content div h1 {
   color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
+  font-family: 'Gluten', sans-serif;
 }
 
 section .card .box .content div p {
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
+  font-family: 'Dancing Script', sans-serif;
+	
 }
 section .card .box .content .conbx  {
   background:#fff;
