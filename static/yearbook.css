@@ -156,7 +156,7 @@ section .card .box .content .conbx  {
   box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
   
 }
-section .card .box .content  ion-icon  {
+section .card .box .content .conbx  ion-icon  {
   font-size:6em;
    
 }
