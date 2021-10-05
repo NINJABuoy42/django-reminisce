@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('tests.urls')),
     path('yearbook/',include('tests.urls')),
+    path('profile/',include('tests.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
