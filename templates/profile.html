@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <title>DISCOVER | Alumni profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{%static 'profile.css'%}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/"><ion-icon name="home"></ion-icon><p>HOME</p></a></li>
+          <li><a href="/#gallery"><ion-icon name="images"></ion-icon><p>GALLERY</p></a></li>
+          <li><a href="/#discover"><ion-icon name="compass"></ion-icon></ion-icon><p>DISCOVER</p></a> </li>
+          <li><a href="#"><ion-icon name="information-circle"></ion-icon><p>ABOUT</p></a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        {%for records in record%}
+        <div class="profile">
+           <div class="card">
+           <div class="imgbx">
+             <img src="{{records.URL}}" alt="">
+           </div>
+           <div class="content">
+             <h1>{{records.NAME}}</h1> 
+             <p>BATCH:{{records.BATCH}}</p>           
+           </div>
+           <ion-icon name="chevron-down-circle" data-toggle="collapse" data-target="#demo"></ion-icon>
+          <div id="demo" class="collapse">
+            <div class="contact">
+              
+              <div class="social">
+                <a href="{{records.mail}}" target="_blank"><ion-icon name="mail-open"></ion-icon></a>
+                <a href="{{records.INSTAGRAM}}" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="{{records.FACEBOOK}}" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="{{records.TWITTER}}" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+              </div>
+            </div>
+          </div> 
+        </div>
+       </div>
+       {{endfor}}
+     </section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
